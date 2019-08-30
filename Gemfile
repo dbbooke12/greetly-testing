@@ -6,7 +6,12 @@ gem 'sqlite3'
 gem 'jquery-rails'
 gem 'uglifier'
 gem 'test-unit'
-gem 'rails_12factor', group: :production
+
+
+group :production do
+ gem 'pg'
+ gem 'rails_12factor'
+end
 
 group :test, :development do
   gem 'rspec-rails'
